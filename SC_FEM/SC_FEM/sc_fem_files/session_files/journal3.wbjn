@@ -1,0 +1,79 @@
+﻿# encoding: utf-8
+# Release 16.2
+SetScriptVersion(Version="16.2.176")
+system1 = GetSystem(Name="SYS")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+system2 = GetSystem(Name="SYS 2")
+setup2 = system2.GetContainer(ComponentName="Setup")
+externalLoadData1 = setup2.GetExternalLoadData()
+externalLoadFileData1 = externalLoadData1.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileData1.ModifyFileData(FilePath=r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\results.csv")
+externalLoadFileData1.ModifyFileData(FilePath=r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\results.csv")
+externalLoadFileDataProperty1 = externalLoadFileData1.GetDataProperty()
+externalLoadColumnData1 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 7")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData1,
+    DataType="Stress")
+externalLoadColumnData2 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 8")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData2,
+    DataType="Stress")
+externalLoadColumnData3 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 9")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData3,
+    DataType="Stress")
+externalLoadColumnData1.Identifier = "SX"
+externalLoadColumnData2.Identifier = "SY"
+externalLoadColumnData3.Identifier = "SXY"
+setup2.RereadDataFiles()
+setupComponent1 = system2.GetComponent(Name="Setup")
+setupComponent1.Update(AllDependencies=True)
+system3 = GetSystem(Name="SYS 1")
+system4 = system3.Duplicate(RelativeTo=system3)
+engineeringDataComponent1 = system4.GetComponent(Name="Engineering Data")
+engineeringDataComponent2 = system3.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system3)
+geometryComponent1 = system4.GetComponent(Name="Geometry")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+system4.Delete()
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system5 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system3)
+engineeringDataComponent3 = system5.GetComponent(Name="Engineering Data")
+engineeringDataComponent3.ReplaceWithShare(
+    TargetSystem=system5,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system3)
+geometryComponent3 = system5.GetComponent(Name="Geometry")
+geometryComponent3.ReplaceWithShare(
+    TargetSystem=system5,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+system5.Delete()
+schematicSettings1 = GetSchematicSettings()
+schematicSettings1.WireBundling = True
+schematicSettings1.WireBundling = False
+setup3 = system3.GetContainer(ComponentName="Setup")
+setup3.Edit()
+setupComponent2 = system3.GetComponent(Name="Setup")
+setupComponent1.TransferData(TargetComponent=setupComponent2)
+setupComponent2.Update(AllDependencies=True)
+setup2.RereadDataFiles()
+setupComponent1.Update(AllDependencies=True)
+setupComponent2.UpdateUpstreamComponents()
+solutionComponent1 = system3.GetComponent(Name="Solution")
+solutionComponent1.UpdateUpstreamComponents()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+Save(Overwrite=True)

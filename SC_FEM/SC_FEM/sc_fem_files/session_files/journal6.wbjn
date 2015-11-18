@@ -1,0 +1,101 @@
+﻿# encoding: utf-8
+# Release 16.2
+SetScriptVersion(Version="16.2.176")
+system1 = GetSystem(Name="SYS")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+system2 = GetSystem(Name="SYS 2")
+setupComponent1 = system2.GetComponent(Name="Setup")
+system3 = GetSystem(Name="SYS 4")
+setupComponent2 = system3.GetComponent(Name="Setup")
+setupComponent1.DeleteTransfer(TargetComponent=setupComponent2)
+template1 = GetTemplate(TemplateName="External Data")
+system4 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system3)
+system4.DisplayText = "Sifference"
+system4.DisplayText = "Difference"
+setup2 = system2.GetContainer(ComponentName="Setup")
+setup2.RereadDataFiles()
+setupComponent1.Update(AllDependencies=True)
+externalLoadData1 = setup2.GetExternalLoadData()
+externalLoadFileData1 = externalLoadData1.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileDataProperty1 = externalLoadFileData1.GetDataProperty()
+externalLoadColumnData1 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 2")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData1,
+    DataType="X Coordinate")
+externalLoadColumnData2 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 3")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData2,
+    DataType="Y Coordinate")
+externalLoadColumnData3 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 4")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData3,
+    DataType="Pressure")
+externalLoadColumnData4 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 5")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData4,
+    DataType="Pressure")
+externalLoadColumnData5 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 6")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData5,
+    DataType="Pressure")
+externalLoadColumnData3.Identifier = "PXred"
+externalLoadColumnData4.Identifier = "PXorg"
+externalLoadColumnData5.Identifier = "PYorg"
+externalLoadColumnData6 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 8")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData6,
+    DataType="Stress")
+externalLoadColumnData7 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 9")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData7,
+    DataType="Stress")
+externalLoadColumnData8 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 10")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData8,
+    DataType="Stress")
+externalLoadColumnData6.Identifier = "SX"
+externalLoadColumnData7.Identifier = "SY"
+externalLoadColumnData8.Identifier = "SXY"
+setupComponent1.Update(AllDependencies=True)
+system5 = GetSystem(Name="SYS 1")
+resultsComponent1 = system5.GetComponent(Name="Results")
+resultsComponent1.Update(AllDependencies=True)
+externalLoadFileData1.ModifyFileData(FilePath=r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=3\results.csv")
+externalLoadColumnData9 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData9,
+    DataType="X Coordinate")
+externalLoadColumnData10 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 1")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData10,
+    DataType="Y Coordinate")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData1,
+    DataType="Pressure")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData2,
+    DataType="Pressure")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData4,
+    DataType="Stress")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData5,
+    DataType="Stress")
+externalLoadColumnData11 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 7")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData11,
+    DataType="Stress")
+externalLoadColumnData1.Identifier = "PXred"
+externalLoadColumnData2.Identifier = "PXorg"
+externalLoadColumnData3.Identifier = "PYorg"
+externalLoadColumnData4.Identifier = "SX"
+externalLoadColumnData5.Identifier = "SY"
+externalLoadColumnData11.Identifier = "SXY"
+setup2.RereadDataFiles()
+setupComponent1.Update(AllDependencies=True)
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+Save(Overwrite=True)

@@ -1,0 +1,66 @@
+﻿# encoding: utf-8
+# Release 16.2
+SetScriptVersion(Version="16.2.176")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+geometryProperties1 = geometry1.GetGeometryProperties()
+geometryProperties1.GeometryImportAnalysisType = "AnalysisType_2D"
+geometry1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1.Exit()
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+system2.DisplayText = "FEM_solution"
+engineeringDataComponent1 = system2.GetComponent(Name="Engineering Data")
+system3 = template1.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent1],
+    Position="Right",
+    RelativeTo=system2)
+system3.DisplayText = "Interpolation"
+template2 = GetTemplate(TemplateName="External Data")
+system4 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+system4.DisplayText = "SC_data"
+setup1 = system4.GetContainer(ComponentName="Setup")
+externalLoadFileData1 = setup1.AddDataFile(FilePath="H:/GoogleDrive/Projects/2015_coupling_complex_FEM_elasticity/ansys/SC_FEM/data/results.csv")
+externalLoadFileDataProperty1 = externalLoadFileData1.GetDataProperty()
+externalLoadColumnData1 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 2")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData1,
+    DataType="X Coordinate")
+externalLoadColumnData2 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 3")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData2,
+    DataType="X Coordinate")
+externalLoadColumnData3 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 4")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData3,
+    DataType="Pressure")
+externalLoadColumnData3.Identifier = "PX"
+externalLoadColumnData4 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 5")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData4,
+    DataType="Pressure")
+externalLoadColumnData4.Identifier = "PY"
+Save(Overwrite=True)

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--  ************************************************************ -->
+<!--  ************************************************************ -->
+<!--  File Name: parm.xml -->
+<!--  ************************************************************ -->
+<!--  ************************************************************ -->
+<ANSYSDOC xmlns="http://www.ansys.com/caedoc_ns">
+<HEADER>
+   <NAME>ANSYS</NAME>
+   <VERSION>16.2</VERSION>
+   <OS>WINDOWS x64</OS>
+   <DESCRIPTION>sc_fem--Static Structural (B5)</DESCRIPTION>
+</HEADER>
+<PARM ID="ANSINTER_">0</PARM>
+<PARM ID="_ASMDIAG">11.313708499</PARM>
+<PARM ID="_DELTA">.565685424949</PARM>
+<PARM ID="_I">4</PARM>
+<PARM ID="_LOADVARI27" TABLE="2 1 1">
+ 0
+ 0
+ 0
+ 0
+ 1
+ -1
+</PARM>
+<PARM ID="_LOADVARI29" TABLE="2 1 1">
+ 0
+ 0
+ 0
+ 0
+ 1
+ -1
+</PARM>
+<PARM ID="_MAXELEMNUM">18723</PARM>
+<PARM ID="_MAXELEMTYPE">4</PARM>
+<PARM ID="_MAXNODENUM">57133</PARM>
+<PARM ID="_MAXREALCONST">5</PARM>
+<PARM ID="_MAXX">4</PARM>
+<PARM ID="_MAXY">4</PARM>
+<PARM ID="_MINX">-4</PARM>
+<PARM ID="_MINY">-4</PARM>
+<PARM ID="_NSPR">57134</PARM>
+<PARM ID="_NUMELEM">18723</PARM>
+<PARM ID="_NUMNODE">57133</PARM>
+<PARM ID="_RETURN">0</PARM>
+<PARM ID="_STATUS">0</PARM>
+<PARM ID="_WALLASOL">14.342222222</PARM>
+<PARM ID="_WALLBSOL">14.340555556</PARM>
+<PARM ID="_WALLSTRT">14.340555556</PARM>
+<PARM ID="_WB_PROJECTSCRATCH_DIR" STRING="248 1 1">
+ H:\GoogleDrive\Projects\2015_coupling_complex_FEM_elasticity\ansys\SC_FEM\_ProjectScratch\Scr13BC\                                                                                                                                                      
+</PARM>
+<PARM ID="_WB_SOLVERFILES_DIR" STRING="248 1 1">
+ H:\GoogleDrive\Projects\2015_coupling_complex_FEM_elasticity\ansys\SC_FEM\sc_fem_files\dp0\SYS\MECH\                                                                                                                                                    
+</PARM>
+<PARM ID="_WB_USERFILES_DIR" STRING="248 1 1">
+ H:\GoogleDrive\Projects\2015_coupling_complex_FEM_elasticity\ansys\SC_FEM\sc_fem_files\user_files\                                                                                                                                                      
+</PARM>
+<PARM ID="_XMAX">4</PARM>
+<PARM ID="_XMIN">-4</PARM>
+<PARM ID="_YMAX">4</PARM>
+<PARM ID="_YMIN">-4</PARM>
+<PARM ID="_ZMAX">0</PARM>
+<PARM ID="_ZMIN">0</PARM>
+<FEAMODEL>
+<TABLES>
+</TABLES>
+<LOADCASE ID="1">
+   <LOADSTEP  STEP="1" SUB="1" TIME="1">
+      <BOUNDARY_CONDITIONS>
+      </BOUNDARY_CONDITIONS>
+   </LOADSTEP>
+</LOADCASE>
+</FEAMODEL>
+</ANSYSDOC>

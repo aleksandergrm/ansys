@@ -1,0 +1,46 @@
+! INITIALIZE ******************************************************************!
+FINISH
+/CLEAR 						! ERASE OLD INFORMATION
+! PARAMETERS ==================================================================!
+PI = 4*ATAN(1)
+A = 0.7 					! INNER RADIUS
+B = 1 						! OUTER RADIUS
+P = 1
+F = -2*PI*B*P/2/(2)			! FORCE (obly half)
+YM = P 					    ! YOUNG MODULUS
+PR = 0.25                   ! POISSON RATIO
+NIT = 15						! # of ITERATIONS
+ERR = 5						! % ERROR
+ESZ  = 0.001				! Size of elements along lines nearest keypoint
+!******************************************************************************!
+/PREP7 						! ENTER PRE-PROCESSOR ENVIRONMENT
+! SELECT PROBLEM ==============================================================!
+ET,1,PLANE182				! 2D 4 NODE STRUCTURAL SOLID
+KEYOPT,1,3,2				! PLANE STRAIN
+MP,EX,1,YM                  ! YOUNG MODUL
+MP,NUXY,1,PR				! POISSON RATIO
+! KEY POINTS ==================================================================!
+! GEOMETRY ====================================================================!
+CYL4,0,0,A,0,B,90			! QUATER L1=OUT, KP1=(0,B), ETC
+! MESH ========================================================================!
+KESIZE,ALL,ESZ                ! edge lengths of the elements nearest  keypoint 1
+!KESIZE,4,10*ESZ
+SMARTSIZE,1   				! 1=FINE MESH, 10=COARSE MESH			           !
+MSHKEY,0					! use free meshing
+AMESH,ALL
+! BOUNDARY CONDITIONS =========================================================!
+DL,2,1,UX,0   			    ! LINE 2 OF AREA 1
+DL,4,1,UY,0					! LINE 4 OF AREA 1
+! LOAD ========================================================================!
+FK,1,FX,F    				! FORCE AT KPT 1		
+FINISH			!
+!******************************************************************************!
+/SOL 						! ENTER SOLUTION ENVIRONMENT
+ADAPT,NIT,ERR,-1,0.75,1		! ADAPTIVE SOLUTION NIT ITERATIONS, ERR IN %
+SOLVE 						! FIND NODE DISPLACEMENT
+FINISH
+!******************************************************************************!
+/POST1 						! Enters the database results postprocessor
+PRITER						! Prints solution summary data
+PRERR
+! EOF**************************************************************************!

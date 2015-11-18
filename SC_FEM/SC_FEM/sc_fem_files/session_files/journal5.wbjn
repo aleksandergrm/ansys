@@ -1,0 +1,217 @@
+﻿# encoding: utf-8
+# Release 16.2
+SetScriptVersion(Version="16.2.176")
+system1 = GetSystem(Name="SYS")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+Save(Overwrite=True)
+setup1.Edit()
+system2 = GetSystem(Name="SYS 2")
+setup2 = system2.GetContainer(ComponentName="Setup")
+externalLoadData1 = setup2.GetExternalLoadData()
+externalLoadFileData1 = externalLoadData1.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileData1.ModifyFileData(FilePath=r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\results.csv")
+externalLoadFileDataProperty1 = externalLoadFileData1.GetDataProperty()
+externalLoadColumnData1 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 2")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData1,
+    DataType="X Coordinate")
+externalLoadColumnData2 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 3")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData2,
+    DataType="Y Coordinate")
+setup2.RereadDataFiles()
+externalLoadColumnData3 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 4")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData3,
+    DataType="Pressure")
+externalLoadColumnData3.Identifier = "PXred"
+externalLoadColumnData4 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 5")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData4,
+    DataType="Pressure")
+externalLoadColumnData4.Identifier = "PXorg"
+externalLoadColumnData5 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 6")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData5,
+    DataType="Pressure")
+externalLoadColumnData5.Identifier = "PYorg"
+externalLoadColumnData6 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 8")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData6,
+    DataType="Stress")
+externalLoadColumnData7 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 9")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData7,
+    DataType="Stress")
+externalLoadColumnData8 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 10")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData8,
+    DataType="Stress")
+externalLoadColumnData6.Identifier = "Sx"
+externalLoadColumnData6.Identifier = "SX"
+externalLoadColumnData7.Identifier = "SY"
+externalLoadColumnData8.Identifier = "SXY"
+setupComponent1 = system2.GetComponent(Name="Setup")
+setupComponent1.Update(AllDependencies=True)
+system3 = GetSystem(Name="SYS 1")
+setupComponent2 = system3.GetComponent(Name="Setup")
+setupComponent2.Update(AllDependencies=True)
+system4 = GetSystem(Name="SYS 3")
+setupComponent3 = system4.GetComponent(Name="Setup")
+setupComponent3.Update(AllDependencies=True)
+Save(Overwrite=True)
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.GetProperty(Name="Elasticity")
+matlProp1.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["1 [Pa]"]])
+engineeringDataComponent1 = system4.GetComponent(Name="Engineering Data")
+geometryComponent1 = system4.GetComponent(Name="Geometry")
+modelComponent1 = system4.GetComponent(Name="Model")
+system5 = system4.Duplicate(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1, modelComponent1],
+    RelativeTo=system4)
+system4.DisplayText = "Int_01"
+system5.DisplayText = "Int_03"
+system4.DisplayText = "Int_02"
+system3.DisplayText = "Int_01"
+template1 = GetTemplate(TemplateName="Geometry")
+system6 = template1.CreateSystem(
+    Position="Above",
+    RelativeTo=system2)
+system7 = GetSystem(Name="Geom")
+system7.DisplayText = "Plate N=3"
+system6.DisplayText = "Plate N=100"
+system8 = template1.CreateSystem(
+    Position="Above",
+    RelativeTo=system2)
+system8.DisplayText = "Plate N=500"
+system2.DisplayText = "SC_data N=3"
+template2 = GetTemplate(TemplateName="External Data")
+system9 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system2)
+system9.DisplayText = "SC_data N=100"
+system10 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system9)
+system10.DisplayText = "SC_data N=500"
+externalLoadFileData1.ModifyFileData(FilePath=r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=3\results.csv")
+setup3 = system9.GetContainer(ComponentName="Setup")
+externalLoadFileData2 = setup3.AddDataFile(FilePath="H:/Version/git/aleksandergrm/FPP/SC_Models/HM_Elastica/data/N=100/results.csv")
+externalLoadFileDataProperty2 = externalLoadFileData2.GetDataProperty()
+externalLoadFileDataProperty2.SetDimensionType(Dimensions="Dimension2D")
+externalLoadColumnData9 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 2")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData9,
+    DataType="X Coordinate")
+externalLoadColumnData10 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 3")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData10,
+    DataType="Y Coordinate")
+externalLoadColumnData11 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 4")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData11,
+    DataType="Pressure")
+externalLoadColumnData12 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 5")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData12,
+    DataType="Pressure")
+externalLoadColumnData13 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 6")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData13,
+    DataType="Pressure")
+externalLoadColumnData14 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 8")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData14,
+    DataType="Stress")
+externalLoadColumnData15 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 9")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData15,
+    DataType="Stress")
+externalLoadColumnData16 = externalLoadFileDataProperty2.GetColumnData(Name="ExternalLoadColumnData 10")
+externalLoadFileDataProperty2.SetColumnDataType(
+    ColumnData=externalLoadColumnData16,
+    DataType="Stress")
+externalLoadColumnData11.Identifier = "PXred"
+externalLoadColumnData12.Identifier = "PXorg"
+externalLoadColumnData13.Identifier = "PYorg"
+externalLoadColumnData14.Identifier = "SX"
+externalLoadColumnData15.Identifier = "SY"
+externalLoadColumnData16.Identifier = "SXY"
+setupComponent1.Update(AllDependencies=True)
+setupComponent4 = system9.GetComponent(Name="Setup")
+setupComponent4.Update(AllDependencies=True)
+setup4 = system10.GetContainer(ComponentName="Setup")
+externalLoadFileData3 = setup4.AddDataFile(FilePath="H:/Version/git/aleksandergrm/FPP/SC_Models/HM_Elastica/data/N=500/results.csv")
+externalLoadFileDataProperty3 = externalLoadFileData3.GetDataProperty()
+externalLoadFileDataProperty3.SetDimensionType(Dimensions="Dimension2D")
+externalLoadColumnData17 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 2")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData17,
+    DataType="X Coordinate")
+externalLoadColumnData18 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 3")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData18,
+    DataType="Y Coordinate")
+externalLoadColumnData19 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 4")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData19,
+    DataType="Pressure")
+externalLoadColumnData20 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 5")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData20,
+    DataType="Pressure")
+externalLoadColumnData21 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 6")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData21,
+    DataType="Pressure")
+externalLoadColumnData22 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 8")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData22,
+    DataType="Stress")
+externalLoadColumnData23 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 9")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData23,
+    DataType="Stress")
+externalLoadColumnData24 = externalLoadFileDataProperty3.GetColumnData(Name="ExternalLoadColumnData 10")
+externalLoadFileDataProperty3.SetColumnDataType(
+    ColumnData=externalLoadColumnData24,
+    DataType="Stress")
+externalLoadColumnData19.Identifier = "PXred"
+externalLoadColumnData20.Identifier = "PXorg"
+externalLoadColumnData21.Identifier = "PYorg"
+externalLoadColumnData22.Identifier = "SX"
+externalLoadColumnData23.Identifier = "SY"
+externalLoadColumnData24.Identifier = "SXY"
+externalLoadFileData2.ModifyFileData(FilePath=r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=50\results.csv")
+geometry1 = system7.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+geometry2 = system6.GetContainer(ComponentName="Geometry")
+geometry2.Edit()
+system6.DisplayText = "Plate N"
+system6.DisplayText = "Plate N=50"
+geometry2.Edit()
+geometry1.Edit()
+Save(Overwrite=True)
+geometry2.Exit()
+geometry3 = system8.GetContainer(ComponentName="Geometry")
+geometryProperties1 = geometry3.GetGeometryProperties()
+geometryProperties1.GeometryImportAnalysisType = "AnalysisType_2D"
+geometryProperties2 = geometry2.GetGeometryProperties()
+geometryProperties2.GeometryImportAnalysisType = "AnalysisType_2D"
+geometry3.Edit()
+Save(Overwrite=True)
+geometry1.Edit()
+geometry1.Exit()
+geometry3.Exit()
+system5.Delete()
+Save(Overwrite=True)
+resultsComponent1 = system3.GetComponent(Name="Results")
+resultsComponent1.Update(AllDependencies=True)
+resultsComponent2 = system4.GetComponent(Name="Results")
+resultsComponent2.Update(AllDependencies=True)
+Save(Overwrite=True)

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ExternalLoadData CurrentVersion="1">
+  <FilesData Count="1">
+    <FileData CurrentVersion="2" Description="" Master="False" Location="results.csv">
+      <FileDataProperty CurrentVersion="3" FileIdentifier="File1" Dimensions="2D" StartImportAtLine="1" FormatType="Delimited" FormatString="" DelimiterType="Comma" DelimiterCharacter="," SectionName="" LengthUnit="m" CoordinateSystemType="Cartesian" OriginX="0" OriginXUnit="m" OriginY="0" OriginYUnit="m" OriginZ="0" OriginZUnit="m" ThetaXY="0" ThetaXYUnit="radian" ThetaYZ="0" ThetaYZUnit="radian" ThetaZX="0" ThetaZXUnit="radian" MorphX="x" MorphY="y" MorphZ="z" ConversionOption="NoConversion">
+        <ColumnsData Count="14">
+          <ColumnData CurrentVersion="2" DataType="Not Used" Unit="" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="Not Used" Unit="" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="X Coordinate" Unit="m" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="Y Coordinate" Unit="m" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="Pressure" Unit="Pa" Identifier="PXred" />
+          <ColumnData CurrentVersion="2" DataType="Pressure" Unit="Pa" Identifier="PXorg" />
+          <ColumnData CurrentVersion="2" DataType="Pressure" Unit="Pa" Identifier="PYorg" />
+          <ColumnData CurrentVersion="2" DataType="Not Used" Unit="" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="Stress" Unit="Pa" Identifier="SX" />
+          <ColumnData CurrentVersion="2" DataType="Stress" Unit="Pa" Identifier="SY" />
+          <ColumnData CurrentVersion="2" DataType="Stress" Unit="Pa" Identifier="SXY" />
+          <ColumnData CurrentVersion="2" DataType="Not Used" Unit="" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="Not Used" Unit="" Identifier="" />
+          <ColumnData CurrentVersion="2" DataType="Not Used" Unit="" Identifier="" />
+        </ColumnsData>
+      </FileDataProperty>
+    </FileData>
+  </FilesData>
+</ExternalLoadData>
