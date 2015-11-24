@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="7.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">14207</timestamp-max>
+    <timestamp-max valType="Int64">14811</timestamp-max>
     <framework-build-version valType="String">16.2.176.0</framework-build-version>
     <external-version-string valType="String">Release 16.2</external-version-string>
-    <last-saved-utc valType="String">11/20/2015 13:54:49</last-saved-utc>
+    <last-saved-utc valType="String">11/24/2015 11:18:43</last-saved-utc>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">admin@SG-WIN-LAP:C:\Users\admin\AppData\Local\Temp\WorkbenchLogs\CoreEvents1132.log</ArrayEntry>
       <ArrayEntry Index="1">admin@SG-WIN-LAP:C:\Users\admin\AppData\Local\Temp\WorkbenchLogs\CoreEvents1000.log</ArrayEntry>
@@ -16,6 +16,7 @@
       <ArrayEntry Index="6">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents7356.log</ArrayEntry>
       <ArrayEntry Index="7">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents7536.log</ArrayEntry>
       <ArrayEntry Index="8">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents3272.log</ArrayEntry>
+      <ArrayEntry Index="9">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents5808.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -1679,7 +1680,7 @@ Exception rethrown at [0]:
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 13854, "Input": 1585, "Output": 1585}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 14795, "Input": 1585, "Output": 1585}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>

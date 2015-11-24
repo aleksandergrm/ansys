@@ -1,0 +1,106 @@
+﻿# encoding: utf-8
+# Release 16.2
+SetScriptVersion(Version="16.2.176")
+system1 = GetSystem(Name="SYS 2")
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.SetState()
+externalLoadData1 = setup1.GetExternalLoadData()
+externalLoadFileData1 = externalLoadData1.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileData1.ModifyFileData(FilePath=r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=3\results.csv")
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Update(AllDependencies=True)
+system2 = GetSystem(Name="SYS 6")
+setup2 = system2.GetContainer(ComponentName="Setup")
+setup2.SetState()
+externalLoadData2 = setup2.GetExternalLoadData()
+externalLoadFileData2 = externalLoadData2.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileData2.ModifyFileData(FilePath=r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=50\results.csv")
+system3 = GetSystem(Name="SYS 7")
+setup3 = system3.GetContainer(ComponentName="Setup")
+setup3.SetState()
+externalLoadData3 = setup3.GetExternalLoadData()
+externalLoadFileData3 = externalLoadData3.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileData3.ModifyFileData(FilePath=r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=500\results.csv")
+setupComponent2 = system2.GetComponent(Name="Setup")
+setupComponent2.Update(AllDependencies=True)
+setupComponent3 = system3.GetComponent(Name="Setup")
+setupComponent3.Update(AllDependencies=True)
+system4 = GetSystem(Name="SYS 5")
+setup4 = system4.GetContainer(ComponentName="Setup")
+setup4.SetState()
+externalLoadData4 = setup4.GetExternalLoadData()
+externalLoadFileData4 = externalLoadData4.GetExternalLoadFileData(Name="ExternalLoadFileData")
+externalLoadFileData4.ModifyFileData(FilePath=r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=3\diff_sx.csv")
+setupComponent4 = system4.GetComponent(Name="Setup")
+setupComponent4.Update(AllDependencies=True)
+system5 = GetSystem(Name="SYS 8")
+geometryComponent1 = system5.GetComponent(Name="Geometry")
+system6 = GetSystem(Name="Geom 1")
+geometryComponent2 = system6.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system5,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system6)
+geometryComponent1.DeleteShare(System=system5)
+system7 = GetSystem(Name="Geom")
+geometryComponent3 = system7.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system5,
+    ComponentToShare=geometryComponent3,
+    SourceSystem=system7)
+modelComponent1 = system5.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system5.GetContainer(ComponentName="Model")
+model1.Edit()
+system8 = GetSystem(Name="SYS")
+modelComponent2 = system8.GetComponent(Name="Model")
+modelComponent2.Refresh()
+system9 = GetSystem(Name="SYS 1")
+setupComponent5 = system9.GetComponent(Name="Setup")
+setupComponent5.Refresh()
+setup5 = system9.GetContainer(ComponentName="Setup")
+setup5.Edit()
+externalLoadFileData4.ModifyFileData(FilePath=r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=3\ss_diff.csv")
+externalLoadFileDataProperty1 = externalLoadFileData4.GetDataProperty()
+externalLoadColumnData1 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData1,
+    DataType="X Coordinate")
+externalLoadColumnData2 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 1")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData2,
+    DataType="Y Coordinate")
+externalLoadColumnData3 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 2")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData3,
+    DataType="Stress")
+externalLoadColumnData4 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 3")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData4,
+    DataType="Stress")
+externalLoadColumnData5 = externalLoadFileDataProperty1.GetColumnData(Name="ExternalLoadColumnData 4")
+externalLoadFileDataProperty1.SetColumnDataType(
+    ColumnData=externalLoadColumnData5,
+    DataType="Stress")
+externalLoadColumnData3.Identifier = "SX"
+externalLoadColumnData4.Identifier = "SY"
+externalLoadColumnData5.Identifier = "SXY"
+modelComponent1.Refresh()
+setupComponent6 = system5.GetComponent(Name="Setup")
+setupComponent6.Refresh()
+setup6 = system5.GetContainer(ComponentName="Setup")
+setup6.Edit()
+model1.Exit()
+setup6.Edit()
+setupComponent6.UpdateUpstreamComponents()
+solutionComponent1 = system5.GetComponent(Name="Solution")
+solutionComponent1.UpdateUpstreamComponents()
+setup4.RereadDataFiles()
+setupComponent4.Update(AllDependencies=True)
+modelComponent1.Refresh()
+setupComponent6.Refresh()
+setup6.Edit()
+model1.Exit()
+model2 = system8.GetContainer(ComponentName="Model")
+model2.Exit()
+Save(Overwrite=True)

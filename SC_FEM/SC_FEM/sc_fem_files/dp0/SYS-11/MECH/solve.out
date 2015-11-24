@@ -1,0 +1,222 @@
+
+ ANSYS Academic Research                           
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS Release 16.2     LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 2015 SAS IP, Inc.  All rights reserved.           *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2008 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ Release 16.2
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products Release 16.2   
+ ANSYS Mechanical Products Release 16.2  
+ ANSYS Customization Files for User Programmable Features Release 16.2   
+ ANSYS Autodyn Release 16.2  
+ ANSYS LS-DYNA Release 16.2  
+ ANSYS CFX (includes ANSYS CFD-Post) Release 16.2
+ ANSYS Fluent (includes ANSYS CFD-Post) Release 16.2 
+ ANSYS TurboGrid Release 16.2
+ ANSYS Polyflow (includes ANSYS CFD-Post) Release 16.2   
+ ANSYS CFD-Post only Release 16.2
+ ANSYS ICEM CFD Release 16.2 
+ ANSYS Aqwa Release 16.2 
+ ANSYS, Inc. License Manager Release 16.2
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  SHARED MEMORY PARALLEL REQUESTED
+    SINGLE PROCESS WITH   2 THREADS REQUESTED
+    TOTAL OF     2 CORES REQUESTED
+  DESIGNXPLORER REQUESTED
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= Release 16.2         BUILD= 16.2      UP20150629   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file  08:45:43  NOV 20, 2015 CP=      1.295
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ DO NOT WRITE ELEMENT RESULTS INTO DATABASE
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  8.76194444    
+
+ TITLE= 
+ sc_fem--Static Structural (F5)                                                
+
+  ACT Extensions:
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr8355\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = H:\Version\ansys\SC_FEM\SC_FEM\sc_fem_files\dp0\SYS-11\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = H:\Version\ansys\SC_FEM\SC_FEM\sc_fem_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 16.2     16.2     ***
+ ANSYS Academic Research                           
+ 01051478  VERSION=WINDOWS x64   08:45:43  NOV 20, 2015 CP=      1.373
+
+ sc_fem--Static Structural (F5)                                                
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Surface Body" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Send Sheet Properties ***********
+ *********** Construct Weak Springs, Prototype 1 ***********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         1.903
+
+
+ --- Number of total nodes = 58807
+ --- Number of contact elements = 0
+ --- Number of spring elements = 8
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 19045
+ --- Number of total elements = 19053
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  8.76194444    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+ ****************************************************
+ ******************* SOLVE FOR LS 1 ****************
+
+ PRINTOUT RESUMED BY /GOP
+ *********** Create Imported Load "Imported Initial Stress" ***********
+
+ *** WARNING ***                         CP =       1.934   TIME= 08:45:43
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       1.934   TIME= 08:45:43
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       1.934   TIME= 08:45:43
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       1.934   TIME= 08:45:43
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       4.384   TIME= 08:45:44
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       4.384   TIME= 08:45:44
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       6.770   TIME= 08:45:46
+ The INISTATE command is not available for element type 2.               
+
+ *** WARNING ***                         CP =       6.770   TIME= 08:45:46
+ The INISTATE command is not available for element type 2.               
