@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="7.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">13261</timestamp-max>
+    <timestamp-max valType="Int64">14207</timestamp-max>
     <framework-build-version valType="String">16.2.176.0</framework-build-version>
     <external-version-string valType="String">Release 16.2</external-version-string>
-    <last-saved-utc valType="String">11/13/2015 19:26:50</last-saved-utc>
+    <last-saved-utc valType="String">11/20/2015 13:54:49</last-saved-utc>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">admin@SG-WIN-LAP:C:\Users\admin\AppData\Local\Temp\WorkbenchLogs\CoreEvents1132.log</ArrayEntry>
       <ArrayEntry Index="1">admin@SG-WIN-LAP:C:\Users\admin\AppData\Local\Temp\WorkbenchLogs\CoreEvents1000.log</ArrayEntry>
@@ -15,6 +15,7 @@
       <ArrayEntry Index="5">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents8524.log</ArrayEntry>
       <ArrayEntry Index="6">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents7356.log</ArrayEntry>
       <ArrayEntry Index="7">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents7536.log</ArrayEntry>
+      <ArrayEntry Index="8">sandro@SG-WIN-LAP:C:\Users\sandro\AppData\Local\Temp\WorkbenchLogs\CoreEvents3272.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -465,13 +466,8 @@
 "3fb08662-d992-4f90-b1f8-95024bd1963a": "/Schematic/Component:Geometry 4",
 "888ea065-01df-4cdc-8efc-f4999318ba42": "/Schematic/Component:Engineering Data 3",
 "ef671d93-ea41-413f-9918-c932c9163aea": "/Schematic/System:SYS 4",
-"72c857fc-3ee6-4751-b1c3-eb95c36db6b0": "/FileContainer/FileReference:F16",
 "7a778561-69b1-494c-9951-70060a47a210": "/Schematic/System:SYS 5",
 "2b222a4d-9765-4c42-9ee7-80b8820887a7": "/FileContainer/FileReference:F22",
-"d349b8c8-7fac-4adb-9893-7d954137d81f": "/FileContainer/FileReference:F21",
-"f11f6573-7a12-49af-96bf-ad238b40f0e8": "/FileContainer/FileReference:F19",
-"6a7a30dd-bd6b-42e6-897e-96b8232815ab": "/FileContainer/FileReference:F17",
-"db97c457-f48c-4653-b0c2-1b7c795a8ba9": "/FileContainer/FileReference:F20",
 "9b75abd7-aa7d-4df9-8360-410d46df6982": "/Schematic/Component:Geometry 6",
 "e447b0c4-5243-45bc-911e-66cc4a91ddc3": "/Schematic/Component:Geometry 7",
 "fa761c24-e056-463b-8505-a284713cb10b": "/Schematic/Component:Setup 6",
@@ -492,7 +488,6 @@
 "90115e92-18f4-4bcb-a086-55520fa5151d": "/Schematic/Component:Setup 5",
 "1dab24ad-c702-41b8-8a75-c711cddc7de9": "/ReportDataContainer/SystemSection:SYS 5",
 "f70b446d-1387-4b3e-9b9a-c389e5f802b0": "/ReportDataContainer/CellSection:Setup 5",
-"6d918761-8330-4568-90b6-a17fbb91e4fd": "/FileContainer/FileReference:F24",
 "1bee847b-486b-4c75-9d28-070dfbb29b88": "/Schematic/System:SYS 3",
 "c14ddce4-ffbe-4929-90ca-82d073f4800d": "/Schematic/Component:Engineering Data 2",
 "c5e3dca7-de16-48a3-a7b2-6190ec6cf06e": "/Schematic/Component:Geometry 3",
@@ -510,7 +505,6 @@
 "09870113-961f-437b-bf51-97d3b5e0fd30": "/FileContainer/FileReference:F29",
 "69dc5eef-d5a5-436e-8a13-8de409b33fd9": "/FileContainer/FileReference:F26",
 "6bc41ec3-319d-471a-8d11-5133f5d40af4": "/FileContainer/FileReference:F27",
-"9e01c991-8eb4-44ec-9458-acc1612ddd9a": "/FileContainer/FileReference:F28",
 "a2afde04-8ee3-477c-8bb4-aa8c0f75502d": "/FileContainer/FileReference:F25",
 "46b27167-4d80-413e-948c-1dda6d9ee52c": "/Schematic/Component:Setup 4",
 "4e9e00f6-4462-4267-aedb-4d25af21bd0d": "/Schematic/Component:Solution 3",
@@ -522,9 +516,7 @@
 "09ba32e9-5c73-494a-a2b7-f8962e247f2f": "/ReportDataContainer/CellSection:Setup 4",
 "697bf49b-a73e-4da9-b7d6-6bdb628db797": "/ReportDataContainer/CellSection:Solution 6",
 "39e38ac9-ee82-4f41-ad94-4a7bb416f5dc": "/ReportDataContainer/CellSection:Results 3",
-"279495e9-1b22-4d8c-af8e-751352f1ac81": "/FileContainer/FileReference:F33",
 "8b555fd1-977d-4b04-bfbe-e6dac64bdb07": "/FileContainer/FileReference:F34",
-"bb6e25d2-9184-4e06-bfd9-2749a0fbc2c7": "/FileContainer/FileReference:F30",
 "d488dd23-cbc0-4e58-8e19-e2c610cd9eab": "/FileContainer/FileReference:F31",
 "6d73471f-7f1b-4553-83a1-40fa6f95f98f": "/FileContainer/FileReference:F32",
 "163ae0a0-57a4-4003-899a-d515bdc08ef2": "/Schematic/System:SYS 8",
@@ -540,7 +532,16 @@
 "3ce222c9-f0df-4345-a7b4-430e0a1b3564": "/ReportDataContainer/CellSection:Model 7",
 "7a2d1a93-2326-48ba-8d95-4e432294eb6d": "/ReportDataContainer/CellSection:Setup 8",
 "8074bc07-92fa-43e8-8899-49cd63ac3e12": "/ReportDataContainer/CellSection:Solution 7",
-"b48d344a-80cf-4d54-a2b4-4653dc9a69d4": "/ReportDataContainer/CellSection:Results 4"
+"b48d344a-80cf-4d54-a2b4-4653dc9a69d4": "/ReportDataContainer/CellSection:Results 4",
+"05dcf27a-1253-48ef-bac3-ae0add1d991b": "/FileContainer/FileReference:F35",
+"128a7ae4-f3c3-4787-b01a-8375fe1f3e7d": "/FileContainer/FileReference:F36",
+"4cf1ffdf-4b1d-442e-b242-76bf8deb0fc2": "/FileContainer/FileReference:F37",
+"4248eec5-dc7b-46d0-97c8-eed763102957": "/FileContainer/FileReference:F39",
+"05004892-772d-4397-a878-e3e6c269e810": "/FileContainer/FileReference:F38",
+"b45bf3e2-2842-411f-80a6-662e5cf73b63": "/FileContainer/FileReference:F40",
+"ada31afc-8cb2-4b5d-8a7d-12f9a971efde": "/FileContainer/FileReference:F44",
+"43dffe4b-ca63-4def-806b-7a69f2798e28": "/FileContainer/FileReference:F45",
+"cd75db70-8ff1-4b8c-bf30-02d79459a6da": "/FileContainer/FileReference:F43"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -809,7 +810,10 @@
 "7dea76f8-b474-4cbd-b9d2-611ff85f62d9": "/Model 4/SimulationEngineeringData:SimulationEngineeringDataObject",
 "8689d37f-bb06-4663-83b4-241e5ce41728": "/Model 4/SimulationModelGeneratedMesh:SimulationModelGeneratedMesh",
 "9050f181-f4d8-492b-bcf7-ed048bd2b2a3": "/Engineering Data 4/EngineeringData:Engineering Data",
-"ca52e036-1140-4e4a-b7e9-c1065707ae75": "/Geometry 5/Geometry:GeometryDataObject"
+"40eb272c-cc6b-4fa7-936a-4662a34071dd": "/Setup 7/ExternalDataOutput:ExternalDataOutput",
+"b7fca7ab-a31f-451c-a57e-f3596b8a7203": "/Setup 7/ExternalDataCdbOutput:ExternalDataCdbOutput",
+"4df064c5-a2fb-4a48-84c4-e38e86c83568": "/Setup 5/ExternalLoadColumnData:ExternalLoadColumnData 3",
+"012610b9-610c-4ea6-928f-8f37d3812460": "/Setup 5/ExternalLoadColumnData:ExternalLoadColumnData 4"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -832,7 +836,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 13261, "Input": 1330, "Output": 1330}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 14181, "Input": 1330, "Output": 1330}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
@@ -866,25 +870,20 @@
         <object-name valType="String">F6</object-name>
         <member-data valType="String">{"DisplayText": "EngineeringData.xml", "FileType": $$a03c2d2a-3cd2-401a-a0c2-6c31d754cb3c, "DependentFiles": [], "ContainerAssociations": ["Engineering Data"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS\ENGD\EngineeringData.xml", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F24" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F45" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F24</object-name>
-        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 2"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-2\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
+        <object-name valType="String">F45</object-name>
+        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 5"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-8\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F19" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F40" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F19</object-name>
-        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-6\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
+        <object-name valType="String">F40</object-name>
+        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 7"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-7\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F25" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F25</object-name>
         <member-data valType="String">{"DisplayText": "SYS-10.agdb", "FileType": $$827ec078-581a-4b5b-b4b8-eb05dd73144c, "DependentFiles": [], "ContainerAssociations": ["Geometry 4"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-10\DM\SYS-10.agdb", "ReferenceCount": 1}</member-data>
-      </Object>
-      <Object Name="/FileContainer/FileReference:F28" Version="1.0">
-        <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F28</object-name>
-        <member-data valType="String">{"DisplayText": "diff_sx.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 5"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=3\diff_sx.csv", "ReferenceCount": 3}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F29" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -896,25 +895,25 @@
         <object-name valType="String">F26</object-name>
         <member-data valType="String">{"DisplayText": "SYS-10.engd", "FileType": $$a03c2d2a-3cd2-401a-a0c2-6c31d754cb3c, "DependentFiles": [], "ContainerAssociations": ["Model 3"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS-10.engd", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F16" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F36" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F16</object-name>
-        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 2"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=3\results.csv", "ReferenceCount": 3}</member-data>
+        <object-name valType="String">F36</object-name>
+        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 2"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-2\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F17" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F39" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F17</object-name>
-        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=100\results.csv", "ReferenceCount": 2}</member-data>
+        <object-name valType="String">F39</object-name>
+        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-6\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F20" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F38" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F20</object-name>
-        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 7"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=500\results.csv", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F38</object-name>
+        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 7"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=500\results.csv", "ReferenceCount": 3}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F21" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F37" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F21</object-name>
-        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\aleksandergrm\FPP\SC_Models\HM_Elastica\data\N=50\results.csv", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F37</object-name>
+        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 6"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=50\results.csv", "ReferenceCount": 3}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F22" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -931,10 +930,10 @@
         <object-name valType="String">F27</object-name>
         <member-data valType="String">{"DisplayText": "SYS-10.mechdb", "FileType": $$cb0126fe-6a5f-4174-8fa7-8c4906aafdfd, "DependentFiles": [], "ContainerAssociations": ["Setup 4", "Model 3"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS-10.mechdb", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F30" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F43" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F30</object-name>
-        <member-data valType="String">{"DisplayText": "SYS-11.agdb", "FileType": $$827ec078-581a-4b5b-b4b8-eb05dd73144c, "DependentFiles": [], "ContainerAssociations": ["Geometry 5"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-11\DM\SYS-11.agdb", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F43</object-name>
+        <member-data valType="String">{"DisplayText": "material.engd", "FileType": $$a03c2d2a-3cd2-401a-a0c2-6c31d754cb3c, "DependentFiles": [], "ContainerAssociations": ["Engineering Data 4"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-11\ENGD\material.engd", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F31" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -946,15 +945,20 @@
         <object-name valType="String">F32</object-name>
         <member-data valType="String">{"DisplayText": "SYS-11.mechdb", "FileType": $$cb0126fe-6a5f-4174-8fa7-8c4906aafdfd, "DependentFiles": [], "ContainerAssociations": ["Setup 8"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\SYS-11.mechdb", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F33" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F44" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F33</object-name>
-        <member-data valType="String">{"DisplayText": "external_load_data.xml", "FileType": $$e63012e2-d128-4b51-ba15-8553ecbdd290, "DependentFiles": [], "ContainerAssociations": ["Setup 5"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-8\ELD\external_load_data.xml", "ReferenceCount": 2}</member-data>
+        <object-name valType="String">F44</object-name>
+        <member-data valType="String">{"DisplayText": "ss_diff.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 5"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=3\ss_diff.csv", "ReferenceCount": 3}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F34" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F34</object-name>
         <member-data valType="String">{"DisplayText": "EngineeringData.xml", "FileType": $$a03c2d2a-3cd2-401a-a0c2-6c31d754cb3c, "DependentFiles": [], "ContainerAssociations": ["Engineering Data 4"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\SYS-11\ENGD\EngineeringData.xml", "ReferenceCount": 1}</member-data>
+      </Object>
+      <Object Name="/FileContainer/FileReference:F35" Version="1.0">
+        <class-type valType="String">FileReference</class-type>
+        <object-name valType="String">F35</object-name>
+        <member-data valType="String">{"DisplayText": "results.csv", "FileType": $$1cfb56a8-982e-4d03-86d7-a6423ae6f918, "DependentFiles": [], "ContainerAssociations": ["Setup 2"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"H:\Version\git\ag\FPP\SC_Models\HM_Elastica\data\N=3\results.csv", "ReferenceCount": 3}</member-data>
       </Object>
     </Container>
     <Container Name="Messages" Version="1.0">
@@ -962,7 +966,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 10248, "Input": 1331, "Output": 1331}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 14174, "Input": 1331, "Output": 1331}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
@@ -1029,6 +1033,11 @@ Exception rethrown at [0]:
         <object-name valType="String">Message 7</object-name>
         <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "Summary": "Update failed for the Solution component in Int_01.  Error updating cell Solution in system Int_01. View the messages in the Mechanical editor for more details.", "Details": None, "Association": "", "DateTimeStamp": 11/13/2015 16:54:04, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": $$c51c3dbb-aab4-4085-9489-6c8a9147b278, "AdditionalMessageData": None}</member-data>
       </Object>
+      <Object Name="/Messages/StoredMessage:Message 8" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 8</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "Summary": "The Setup component in Corrected SC by FEM requires user input before it can be updated. For instructions on how to address the cell in its current state, click the blue triangle in the lower right corner of the cell.", "Details": None, "Association": "", "DateTimeStamp": 11/20/2015 09:31:31, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None}</member-data>
+      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -1037,7 +1046,7 @@ Exception rethrown at [0]:
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 13236, "Input": 6143, "Output": 1334}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 14191, "Input": 6143, "Output": 1334}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -1055,7 +1064,7 @@ Exception rethrown at [0]:
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 13252, "Input": 13234, "Output": 1336}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 14192, "Input": 14034, "Output": 1336}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
@@ -1325,7 +1334,7 @@ Exception rethrown at [0]:
       <Object Name="/Schematic/Component:Setup 7" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Setup 7</object-name>
-        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 7", "Template": $$795ea693-0598-44a8-8268-d0cbb16543f2, "InSystem": $$a98566a1-d5b3-4396-8973-80f7eef3f9d5, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False}</member-data>
+        <member-data valType="String">{"DisplayText": "Setup", "ImageName": "setup", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Setup 7", "Template": $$795ea693-0598-44a8-8268-d0cbb16543f2, "InSystem": $$a98566a1-d5b3-4396-8973-80f7eef3f9d5, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": {}, "ActiveTransferComponents": [], "Solver": "", "IsFailedState": False}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Setup 5" Version="1.0">
         <class-type valType="String">Component</class-type>
@@ -1340,7 +1349,7 @@ Exception rethrown at [0]:
       <Object Name="/Schematic/Component:Geometry 5" Version="1.0">
         <class-type valType="String">Component</class-type>
         <object-name valType="String">Geometry 5</object-name>
-        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_designmodeler", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": None, "DataSharing": "None", "DataContainer": "Geometry 5", "Template": $$96ec7a15-b0ec-4e9d-b77e-89a7b4e07962, "InSystem": $$163ae0a0-57a4-4003-899a-d515bdc08ef2, "MasterSources": {"Sources": []}, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False}</member-data>
+        <member-data valType="String">{"DisplayText": "Geometry", "ImageName": "cad_designmodeler", "ComponentStateOnLastFailure": "UpToDate", "AlwaysBePartOfDpUpdate": False, "FullyUpToDateOnDps": None, "CoupledClients": [], "SubComponents": [], "DataSharedFrom": $$226db962-fe9b-423c-938d-e3c3f477211d, "DataSharing": "Full", "DataContainer": "Geometry", "Template": $$96ec7a15-b0ec-4e9d-b77e-89a7b4e07962, "InSystem": $$163ae0a0-57a4-4003-899a-d515bdc08ef2, "MasterSources": None, "Notes": None, "UsedLicenses": None, "ActiveTransferComponents": [], "Solver": None, "IsFailedState": False}</member-data>
       </Object>
       <Object Name="/Schematic/Component:Model 4" Version="1.0">
         <class-type valType="String">Component</class-type>
@@ -1670,7 +1679,7 @@ Exception rethrown at [0]:
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 12959, "Input": 1585, "Output": 1585}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 13854, "Input": 1585, "Output": 1585}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <last-update-regen-times valType="String">{}</last-update-regen-times>
       <contains-significant-data valType="Boolean">false</contains-significant-data>

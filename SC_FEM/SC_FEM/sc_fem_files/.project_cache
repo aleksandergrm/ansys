@@ -2,6 +2,9 @@
 dp0/Geom-1/DM/Geom-1.agdb
 dp0/Geom-2/DM/Geom-2.agdb
 dp0/global/MECH/SYS-11/Figures and Images/StaticFigure414.png
+dp0/global/MECH/SYS-11/Figures and Images/StaticFigure431.png
+dp0/global/MECH/SYS-11/Figures and Images/StaticFigure433.png
+dp0/global/MECH/SYS-11/Figures and Images/StaticFigure434.png
 dp0/global/MECH/SYS-10.engd
 dp0/global/MECH/SYS-10.mechdb
 dp0/global/MECH/SYS-11.mechdb
@@ -25,8 +28,8 @@ dp0/SYS-1/MECH/ds.dat
 dp0/SYS-1/MECH/file.BCS
 dp0/SYS-1/MECH/file.err
 dp0/SYS-1/MECH/file.rst
-dp0/SYS-1/MECH/Import_Output_54_92B9.xml
-dp0/SYS-1/MECH/Import_Output_58_9C6A.xml
+dp0/SYS-1/MECH/Import_Output_54_582E.xml
+dp0/SYS-1/MECH/Import_Output_58_6440.xml
 dp0/SYS-1/MECH/MatML.xml
 dp0/SYS-1/MECH/solve.out
 dp0/SYS-10/DM/SYS-10.agdb
@@ -35,11 +38,19 @@ dp0/SYS-10/MECH/Setup 2/external_load_data.xml
 dp0/SYS-10/MECH/Setup 2/results.csv
 dp0/SYS-10/MECH/Import_Output_384_5EAE.xml
 dp0/SYS-11/ENGD/EngineeringData.xml
-dp0/SYS-11/MECH/Setup 5/diff_sx.csv
+dp0/SYS-11/ENGD/material.engd
 dp0/SYS-11/MECH/Setup 5/external_load_data.xml
-dp0/SYS-11/MECH/Import_Output_414_3D0B.xml
+dp0/SYS-11/MECH/Setup 5/ss_diff.csv
+dp0/SYS-11/MECH/CAERep.xml
+dp0/SYS-11/MECH/CAERepOutput.xml
+dp0/SYS-11/MECH/ds.dat
+dp0/SYS-11/MECH/file.err
+dp0/SYS-11/MECH/Import_Output_431_9AC9.xml
+dp0/SYS-11/MECH/MatML.xml
+dp0/SYS-11/MECH/solve.out
 dp0/SYS-2/ELD/external_load_data.xml
 dp0/SYS-6/ELD/external_load_data.xml
+dp0/SYS-7/ELD/external_load_data.xml
 dp0/SYS-8/ELD/external_load_data.xml
 dp0/SYS-9/MECH/Setup 2/external_load_data.xml
 dp0/SYS-9/MECH/Setup 2/results.csv
@@ -65,6 +76,7 @@ session_files/journal7.wbjn
 session_files/journal7_crashed.wbjn
 session_files/journal8.wbjn
 session_files/journal8_crashed.wbjn
+session_files/journal9.wbjn
 dp0/
 session_files/
 dp0/Geom/
@@ -77,6 +89,7 @@ dp0/SYS-10/
 dp0/SYS-11/
 dp0/SYS-2/
 dp0/SYS-6/
+dp0/SYS-7/
 dp0/SYS-8/
 dp0/SYS-9/
 dp0/Geom/DM/
@@ -101,6 +114,7 @@ dp0/SYS-11/MECH/
 dp0/SYS-11/MECH/Setup 5/
 dp0/SYS-2/ELD/
 dp0/SYS-6/ELD/
+dp0/SYS-7/ELD/
 dp0/SYS-8/ELD/
 dp0/SYS-9/MECH/
 dp0/SYS-9/MECH/Setup 2/

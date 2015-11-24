@@ -88,7 +88,7 @@
   STOP FILE MODE               = NOREAD
 
  RELEASE= Release 16.2         BUILD= 16.2      UP20150629   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file  18:17:53  NOV 13, 2015 CP=      1.295
+ CURRENT JOBNAME=file  09:01:31  NOV 20, 2015 CP=      1.295
 
 
  PARAMETER _DS_PROGRESS =     999.0000000    
@@ -99,7 +99,7 @@
 
  DO NOT WRITE ELEMENT RESULTS INTO DATABASE
 
- *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.2983333    
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.02527778    
 
  TITLE= 
  sc_fem--Static Structural 2 (C5)                                              
@@ -109,7 +109,7 @@
  SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_PROJECTSCRATCH_DIR(1) = H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr32E1\
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr476\
 
  SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
@@ -146,7 +146,7 @@
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 16.2     16.2     ***
  ANSYS Academic Research                           
- 01051478  VERSION=WINDOWS x64   18:17:54  NOV 13, 2015 CP=      1.373
+ 01051478  VERSION=WINDOWS x64   09:01:31  NOV 20, 2015 CP=      1.373
 
  sc_fem--Static Structural 2 (C5)                                              
 
@@ -164,7 +164,7 @@
  *********** Define Surface Elements for Imported Load "Imported Pressure - R" *
 
 
- ***** ROUTINE COMPLETED *****  CP =         1.825
+ ***** ROUTINE COMPLETED *****  CP =         1.763
 
 
  --- Number of total nodes = 58753
@@ -174,7 +174,7 @@
  --- Number of solid elements = 19029
  --- Number of total elements = 19257
 
- *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.2983333    
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.02527778    
  ****************************************************************************
  *************************    SOLUTION       ********************************
  ****************************************************************************
@@ -245,14 +245,14 @@
 
  *****  ANSYS SOLVE    COMMAND  *****
 
- *** WARNING ***                         CP =       1.856   TIME= 18:17:54
+ *** WARNING ***                         CP =       1.825   TIME= 09:01:31
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** NOTE ***                            CP =       1.966   TIME= 18:17:54
+ *** NOTE ***                            CP =       1.981   TIME= 09:01:31
  The model data was checked and warning messages were found.             
   Please review output or errors file (                                  
- H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr32E1\file.err ) for   
+ H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr476\file.err ) for    
  these warning messages.                                                 
 
  *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -266,7 +266,7 @@
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 16.2     16.2     ***
  ANSYS Academic Research                           
- 01051478  VERSION=WINDOWS x64   18:17:54  NOV 13, 2015 CP=      1.966
+ 01051478  VERSION=WINDOWS x64   09:01:31  NOV 20, 2015 CP=      1.981
 
  sc_fem--Static Structural 2 (C5)                                              
 
@@ -281,18 +281,18 @@
    EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
    GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
- *** WARNING ***                         CP =       2.090   TIME= 18:17:54
+ *** WARNING ***                         CP =       2.137   TIME= 09:01:31
  Material number 2 (used by element 19030 ) should normally have at      
  least one MP or one TB type command associated with it.  Output of      
  energy by material may not be available.                                
 
- *** NOTE ***                            CP =       2.122   TIME= 18:17:54
+ *** NOTE ***                            CP =       2.200   TIME= 09:01:31
  The step data was checked and warning messages were found.              
   Please review output or errors file (                                  
- H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr32E1\file.err ) for   
+ H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr476\file.err ) for    
  these warning messages.                                                 
 
- *** NOTE ***                            CP =       2.122   TIME= 18:17:54
+ *** NOTE ***                            CP =       2.200   TIME= 09:01:31
  The conditions for direct assembly have been met.  No .emat or .erot    
  files will be produced.                                                 
 
@@ -347,10 +347,10 @@
    *** ELEMENT MATRIX FORMULATION TIMES
   TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-     1     19029  PLANE183      4.274   0.000225
+     1     19029  PLANE183      4.742   0.000249
      2       114  SURF153       0.000   0.000000
      3       114  SURF153       0.000   0.000000
- Time at end of element matrix formulation CP = 5.27283382.              
+ Time at end of element matrix formulation CP = 5.7408371.               
 
  SPARSE MATRIX DIRECT SOLVER.
   Number of equations =      112304,    Maximum wavefront =     48
@@ -359,17 +359,17 @@
   Memory required for out-of-core =      28.790 MB
 
 
- *** NOTE ***                            CP =       6.958   TIME= 18:17:57
+ *** NOTE ***                            CP =       7.457   TIME= 09:01:35
  The Sparse Matrix solver is currently running in the in-core memory     
  mode.  This memory mode uses the most amount of memory in order to      
  avoid using the hard drive as much as possible, which most often        
  results in the fastest solution time.  This mode is recommended if      
  enough physical memory is present to accommodate all of the solver      
  data.                                                                   
- curEqn=  60851  totEqn= 112304 Job CP sec=      5.822
-      Factor Done=  50% Factor Wall sec=      0.326 rate=    4171.5 Mflops
- curEqn= 112304  totEqn= 112304 Job CP sec=      6.202
-      Factor Done= 100% Factor Wall sec=      0.705 rate=    3855.0 Mflops
+ curEqn=  60851  totEqn= 112304 Job CP sec=      6.467
+      Factor Done=  50% Factor Wall sec=      0.551 rate=    2467.3 Mflops
+ curEqn= 112304  totEqn= 112304 Job CP sec=      6.837
+      Factor Done= 100% Factor Wall sec=      0.921 rate=    2949.5 Mflops
  Sparse solver maximum pivot= 11.5322639 at node 36749 UX.               
  Sparse solver minimum pivot= 0.172821694 at node 20205 UX.              
  Sparse solver minimum pivot in absolute value= 0.172821694 at node      
@@ -378,14 +378,14 @@
    *** ELEMENT RESULT CALCULATION TIMES
   TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-     1     19029  PLANE183      3.650   0.000192
-     2       114  SURF153       0.031   0.000274
+     1     19029  PLANE183      3.978   0.000209
+     2       114  SURF153       0.000   0.000000
      3       114  SURF153       0.000   0.000000
 
    *** NODAL LOAD CALCULATION TIMES
   TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-     1     19029  PLANE183      0.172   0.000009
+     1     19029  PLANE183      0.203   0.000011
      2       114  SURF153       0.000   0.000000
      3       114  SURF153       0.000   0.000000
  *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
@@ -404,20 +404,20 @@
 
  PARAMETER _DS_PROGRESS  DELETED.
 
- *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.2997222    
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.02694444    
 
  PRINTOUT RESUMED BY /GOP
 
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =        11.450
+ ***** ROUTINE COMPLETED *****  CP =        12.199
 
 
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 16.2     16.2     ***
  ANSYS Academic Research                           
- 01051478  VERSION=WINDOWS x64   18:17:59  NOV 13, 2015 CP=     11.450
+ 01051478  VERSION=WINDOWS x64   09:01:37  NOV 20, 2015 CP=     12.215
 
  sc_fem--Static Structural 2 (C5)                                              
 
@@ -425,7 +425,7 @@
 
           ***** ANSYS RESULTS INTERPRETATION (POST1) *****
 
- *** NOTE ***                            CP =      11.450   TIME= 18:17:59
+ *** NOTE ***                            CP =      12.215   TIME= 09:01:37
  Reading results into the database (SET command) will update the current 
  displacement and force boundary conditions in the database with the     
  values from the results file for that load set.  Note that any          
@@ -443,21 +443,21 @@
  EXIT THE ANSYS POST1 DATABASE PROCESSOR
 
 
- ***** ROUTINE COMPLETED *****  CP =        11.450
+ ***** ROUTINE COMPLETED *****  CP =        12.215
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.2997222    
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  9.02694444    
 
  PARAMETER _PREPTIME =     0.000000000    
 
- PARAMETER _SOLVTIME =     5.000000000    
+ PARAMETER _SOLVTIME =     6.000000000    
 
  PARAMETER _POSTTIME =     0.000000000    
 
- PARAMETER _TOTALTIM =     5.000000000    
+ PARAMETER _TOTALTIM =     6.000000000    
 
  EXIT ANSYS WITHOUT SAVING DATABASE
 
@@ -468,8 +468,8 @@
 +--------------------- A N S Y S   S T A T I S T I C S ------------------------+
 
 Release: Release 16.2       Build: 16.2       Update: UP20150629   Platform: WINDOWS x64 
-Date Run: 11/13/2015   Time: 18:18
-Windows Process ID:         5052
+Date Run: 11/20/2015   Time: 09:01
+Windows Process ID:         4084
 
 Processor Model: Intel(R) Core(TM) i7 CPU       Q 740  @ 1.73GHz
 
@@ -486,19 +486,19 @@ Total number of cores requested         :    2 (Shared Memory Parallel)
 GPU Acceleration: Not Requested
 
 Job Name: file
-Working Directory: H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr32E1
+Working Directory: H:\Version\ansys\SC_FEM\SC_FEM\_ProjectScratch\Scr476
 
-Total CPU time for main thread                    :        7.2 seconds
-Total CPU time summed for all threads             :       11.5 seconds
+Total CPU time for main thread                    :        7.6 seconds
+Total CPU time summed for all threads             :       12.2 seconds
 
 Elapsed time spent pre-processing model (/PREP7)  :        0.3 seconds
 Elapsed time spent solution - preprocessing       :        0.6 seconds
-Elapsed time spent computing solution             :        4.8 seconds
+Elapsed time spent computing solution             :        5.3 seconds
 Elapsed time spent solution - postprocessing      :        0.0 seconds
 Elapsed time spent post-processing model (/POST1) :        0.0 seconds
 
-Equation solver computational rate                :     3702.4 Mflops
-Equation solver effective I/O rate                :     5924.8 MB/sec
+Equation solver computational rate                :     2860.1 Mflops
+Equation solver effective I/O rate                :     5909.5 MB/sec
 
 Maximum total memory used                         :      652.0 MB
 Maximum total memory allocated                    :     2112.0 MB
@@ -522,7 +522,7 @@ Maximum total memory available                    :          8 GB
  |                                                                           |
  |---------------------------------------------------------------------------|
  |                                                                           |
- |        CP Time      (sec) =         11.466       Time  =  18:18:02        |
- |        Elapsed Time (sec) =         11.000       Date  =  11/13/2015      |
+ |        CP Time      (sec) =         12.230       Time  =  09:01:41        |
+ |        Elapsed Time (sec) =         13.000       Date  =  11/20/2015      |
  |                                                                           |
  *---------------------------------------------------------------------------*
