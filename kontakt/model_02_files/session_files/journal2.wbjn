@@ -1,0 +1,13 @@
+﻿# encoding: utf-8
+# Release 16.2
+SetScriptVersion(Version="16.2.176")
+system1 = GetSystem(Name="SYS")
+system1.Delete()
+system2 = GetSystem(Name="Geom")
+system2.Delete()
+template1 = GetTemplate(TemplateName="Geometry")
+system3 = template1.CreateSystem()
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+Save(Overwrite=True)

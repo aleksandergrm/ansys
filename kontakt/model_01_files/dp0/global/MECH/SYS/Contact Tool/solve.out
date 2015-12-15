@@ -1,0 +1,464 @@
+
+ ANSYS Academic Teaching Advanced                  
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS Release 16.2     LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 2015 SAS IP, Inc.  All rights reserved.           *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2008 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ Release 16.2
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products Release 16.2   
+ ANSYS Mechanical Products Release 16.2  
+ ANSYS Customization Files for User Programmable Features Release 16.2   
+ ANSYS Autodyn Release 16.2  
+ ANSYS LS-DYNA Release 16.2  
+ ANSYS CFX (includes ANSYS CFD-Post) Release 16.2
+ ANSYS Fluent (includes ANSYS CFD-Post) Release 16.2 
+ ANSYS TurboGrid Release 16.2
+ ANSYS Polyflow (includes ANSYS CFD-Post) Release 16.2   
+ ANSYS CFD-Post only Release 16.2
+ ANSYS ICEM CFD Release 16.2 
+ ANSYS Aqwa Release 16.2 
+ ANSYS, Inc. License Manager Release 16.2
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  SHARED MEMORY PARALLEL REQUESTED
+    SINGLE PROCESS WITH   2 THREADS REQUESTED
+    TOTAL OF     2 CORES REQUESTED
+  DESIGNXPLORER REQUESTED
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= Release 16.2         BUILD= 16.2      UP20150629   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file  14:48:18  DEC 13, 2015 CP=      1.264
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  14.8050000    
+
+ TITLE= 
+ model_01--Static Structural (A5)                                              
+
+  ACT Extensions:
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = H:\Version\git\ag\ansys\kontakt\model_01_files\dp0\global\MECH\SYS\Contact Tool\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = H:\Version\git\ag\ansys\kontakt\model_01_files\dp0\global\MECH\SYS\Contact Tool\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = H:\Version\git\ag\ansys\kontakt\model_01_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 16.2     16.2     ***
+ ANSYS Academic Teaching Advanced                  
+ 01051478  VERSION=WINDOWS x64   14:48:18  DEC 13, 2015 CP=      1.326
+
+ model_01--Static Structural (A5)                                              
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "block" ***********
+ *********** Elements for Body 2 "pipe" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Send Materials ***********
+ *********** Create Contact "Frictional - block To pipe" ***********
+             Real Constant Set For Above Contact Is 4 & 3
+
+
+ ***** ROUTINE COMPLETED *****  CP =         2.902
+
+
+ --- Number of total nodes = 191835
+ --- Number of contact elements = 8064
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 43960
+ --- Number of total elements = 52024
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  14.8052778    
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF LAST
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF LAST
+   FOR ALL APPLICABLE ENTITIES
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ SELECT       FOR ITEM=ENAM COMPONENT=    
+  IN RANGE       169 TO        175 STEP          1
+
+       8064  ELEMENTS (OF      52024  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+    12448 NODES (OF   191835  DEFINED) SELECTED FROM
+     8064 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SELECT      ALL ELEMENTS HAVING ANY NODE IN NODAL SET.
+
+    12160 ELEMENTS (OF    52024  DEFINED) SELECTED FROM
+    12448 SELECTED NODES BY  ESLN COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+    29056 NODES (OF   191835  DEFINED) SELECTED FROM
+    12160 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ CHECK INITIAL OPEN/CLOSED STATUS OF SELECTED CONTACT ELEMENTS
+      AND POST INITIAL CONTACT STATUS
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE    1 IS SOLID186. KEYOPT(2) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+ ELEMENT TYPE    2 IS SOLID186. KEYOPT(2) IS ALREADY SET AS SUGGESTED AND NO
+ RESETTING IS NEEDED.
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** NOTE ***                            CP =       4.711   TIME= 14:48:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 3 and contact element type 3 has been set up.  The         
+ companion pair has real constant set ID 4.  Both pairs should have the  
+ same behavior.                                                          
+ ANSYS will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.57530E+14
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.10429E-02
+ Max. initial friction coefficient MU         0.50000    
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.10000E-01
+ The resulting elastic slip                   0.90458E-04
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.90458E-02
+ Average contact pair depth                   0.10429E-01
+ Default pinball region factor PINB            1.0000    
+ The resulting pinball region                 0.11001E-01
+ Contact offset towards to contact CNOF       0.10000E-01
+ *WARNING*: Initial penetration is included.
+
+ *** NOTE ***                            CP =       4.711   TIME= 14:48:20
+ Max.  Initial penetration 5.000240869E-03 was detected between contact  
+ element 49512 and target element 51515.                                 
+ You may move entire target surface by : x= 3.860122092E-03, y=          
+ 3.178343307E-03, z= -7.036701694E-11,to reduce initial penetration.     
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       4.711   TIME= 14:48:20
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 4 and contact element type 3 has been set up.  The         
+ companion pair has real constant set ID 3.  Both pairs should have the  
+ same behavior.                                                          
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  1.0000    
+ The resulting initial contact stiffness      0.57530E+14
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.44898E-02
+ Max. initial friction coefficient MU         0.50000    
+ Default tangent stiffness factor FKT          1.0000    
+ Default elastic slip factor SLTOL            0.10000E-01
+ The resulting elastic slip                   0.26341E-03
+ Update contact stiffness at each iteration
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.26341E-01
+ Average contact pair depth                   0.44898E-01
+ Default pinball region factor PINB            1.0000    
+ The resulting pinball region                 0.44898E-01
+
+ *** NOTE ***                            CP =       4.711   TIME= 14:48:20
+ One of the contact searching regions contains at least 196 target       
+ elements.  You may reduce the pinball radius.                           
+ Contact offset towards to contact CNOF       0.10000E-01
+ *WARNING*: Initial penetration is included.
+
+ *** NOTE ***                            CP =       4.711   TIME= 14:48:20
+ Max.  Initial penetration 4.999507885E-03 was detected between contact  
+ element 50917 and target element 45917.                                 
+ You may move entire target surface by : x= -4.535571575E-03, y=         
+ -2.103252144E-03, z= 2.014198397E-17,to reduce initial penetration.     
+ ****************************************
+  
+
+ *** WARNING ***                         CP =       4.711   TIME= 14:48:20
+ Maximum friction coefficient 0.5 is defined in the model.  Switch to    
+ the unsymmetric solver (NROP,UNSYM) instead if convergence difficulty   
+ is encountered.                                                         
+  
+  
+
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET           3
+ Max.  Penetration of -5.000240869E-03 has been detected between contact 
+ element 49512 and target element 51515.                                 
+ For total 3456 contact elements, there are 3456 elements are in         
+ contact.                                                                
+ There are 3456 elements are in sticking.                                
+ Contacting area 0.314159265.                                            
+ 13824 contact points have too much penetration (do not meet             
+ compatibility condition).                                               
+ Max.  Pinball distance 1.100143135E-02.                                 
+ One of the contact searching regions contains at least 15 target        
+ elements.                                                               
+ Max.  Pressure/force 2.876662657E+11.                                   
+ Max.  Normal stiffness 5.753048167E+13.                                 
+ Min.  Normal stiffness 5.753048167E+13.                                 
+ Max.  Tangential stiffness 2.487343541E+13.                             
+ Min.  Tangential stiffness 2.487343541E+13.                             
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET           4
+
+ *** NOTE ***                            CP =       6.630   TIME= 14:48:21
+ Contact pair is inactive.                                               
+
+
+
+            **** CENTER OF MASS, MASS, AND MASS MOMENTS OF INERTIA ****
+
+  CALCULATIONS ASSUME ELEMENT MASS AT ELEMENT CENTROID
+
+  TOTAL MASS =   143.18    
+
+                           MOM. OF INERTIA         MOM. OF INERTIA
+  CENTER OF MASS            ABOUT ORIGIN        ABOUT CENTER OF MASS
+
+  XC = -0.91982E-04      IXX =    5.716          IXX =    4.284    
+  YC = -0.85233E-04      IYY =    5.714          IYY =    4.282    
+  ZC =  0.10000          IZZ =    7.106          IZZ =    7.106    
+                         IXY =   0.8846E-03      IXY =   0.8858E-03
+                         IYZ =   0.1220E-02      IYZ =   0.6640E-07
+                         IZX =   0.1317E-02      IZX =   0.3711E-08
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1   7.53583    
+     2   135.639    
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+  TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+     1      3456  SOLID186      1.466   0.000424
+     2       640  SOLID186      0.187   0.000293
+     3      4032  CONTA174      1.342   0.000333
+     4      4032  TARGE170      0.062   0.000015
+ Time at end of element matrix formulation CP = 6.66124296.              
+
+   *** ELEMENT RESULT CALCULATION TIMES
+  TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+     3      4032  CONTA174      1.217   0.000302
+
+   *** NODAL LOAD CALCULATION TIMES
+  TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+     3      4032  CONTA174      0.000   0.000000
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         7.410
+
+
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  14.8061111    
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  14.8061111    
+
+ PARAMETER _PREPTIME =     1.000000000    
+
+ PARAMETER _SOLVTIME =     3.000000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     4.000000000    
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          1
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------------------- A N S Y S   S T A T I S T I C S ------------------------+
+
+Release: Release 16.2       Build: 16.2       Update: UP20150629   Platform: WINDOWS x64 
+Date Run: 12/13/2015   Time: 14:48
+Windows Process ID:         1340
+
+Processor Model: Intel(R) Core(TM) i7 CPU       Q 740  @ 1.73GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 14.0.0  (Build: 20140422)
+          Intel(R) C/C++ Compiler Version 14.0.0  (Build: 20140422)
+          Intel(R) Math Kernel Library Version 11.1.3 Product Build 20140917
+
+Total number of cores available         :    8
+Number of physical cores available      :    4
+Number of processes requested           :    1
+Number of threads per process requested :    2
+Total number of cores requested         :    2 (Shared Memory Parallel)                    
+
+GPU Acceleration: Not Requested
+
+Job Name: file
+Working Directory: H:\Version\git\ag\ansys\kontakt\model_01_files\dp0\global\MECH\SYS\Contact Tool
+
+Total CPU time for main thread                    :        5.1 seconds
+Total CPU time summed for all threads             :        7.7 seconds
+
+Elapsed time spent pre-processing model (/PREP7)  :        1.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+
+Maximum total memory used                         :      136.0 MB
+Maximum total memory allocated                    :     2112.0 MB
+Maximum total memory available                    :          8 GB
+
++------------------ E N D   A N S Y S   S T A T I S T I C S -------------------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                            ANSYS RUN COMPLETED                            |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys Release 16.2          Build 16.2         UP20150629     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used      89 MB    Maximum Scratch Memory Used     47 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =          7.722       Time  =  14:48:24        |
+ |        Elapsed Time (sec) =          9.000       Date  =  12/13/2015      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

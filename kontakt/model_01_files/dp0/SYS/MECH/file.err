@@ -1,0 +1,18 @@
+/COM,ANSYS RELEASE Release 16.2      BUILD 16.2      UP20150629       14:55:57
+
+ *** WARNING ***                         CP =       3.838   TIME= 14:56:00
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       4.399   TIME= 14:56:00
+ Material number 4 (used by element 43961 ) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       7.925   TIME= 14:56:03
+ Maximum friction coefficient 0.5 is defined in the model.  Switch to    
+ the unsymmetric solver (NROP,UNSYM) instead if convergence difficulty   
+ is encountered.                                                         
+
+ *** WARNING ***                         CP =      29.515   TIME= 14:56:15
+ Coefficient ratio exceeds 1.0e8 - Check results.                        

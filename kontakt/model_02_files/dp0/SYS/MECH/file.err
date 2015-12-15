@@ -1,0 +1,15 @@
+/COM,ANSYS RELEASE Release 16.2      BUILD 16.2      UP20150629       19:27:44
+
+ *** WARNING ***                         CP =       3.136   TIME= 19:27:47
+ Using 1 iteration per substep may result in unconverged solutions for   
+ nonlinear analysis and the program may not indicate divergence in this  
+ case.  Check your results.                                              
+
+ *** WARNING ***                         CP =       3.198   TIME= 19:27:47
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       5.585   TIME= 19:27:48
+ Material number 5 (used by element 47164 ) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                

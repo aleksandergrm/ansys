@@ -1,0 +1,12 @@
+/COM,ANSYS RELEASE Release 16.2      BUILD 16.2      UP20150629       14:46:33
+
+ *** WARNING ***                         CP =       1.576   TIME= 14:46:35
+ Maximum friction coefficient 0.5 is defined in the model.  Switch to    
+ the unsymmetric solver (NROP,UNSYM) instead if convergence difficulty   
+ is encountered.                                                         
+/COM,ANSYS RELEASE Release 16.2      BUILD 16.2      UP20150629       14:48:16
+
+ *** WARNING ***                         CP =       4.711   TIME= 14:48:20
+ Maximum friction coefficient 0.5 is defined in the model.  Switch to    
+ the unsymmetric solver (NROP,UNSYM) instead if convergence difficulty   
+ is encountered.                                                         
